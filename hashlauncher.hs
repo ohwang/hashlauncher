@@ -1,4 +1,4 @@
--- #!/usr/bin/env runhs
+-- #!/usr/bin/env runhaskell
 
 import System.Environment
 import System.IO
@@ -16,12 +16,12 @@ getProgFromExt ext =
     ".fsx" -> "fsi"
 
 main = do
-  putStrLn "Hello SheLauncher"
   args <- getArgs
 
   let scriptPath = head args
 
-  putStrLn scriptPath
+  print scriptPath
+  print $ takeExtension scriptPath
 
   psHandle <- withFile scriptPath ReadMode (\handle -> do
     firstLine <- hGetLine handle
