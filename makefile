@@ -1,10 +1,10 @@
 # Makefile for HashLaucnher
 
 main: hashlauncher.hs Icon.o
-			ghc hashlauncher.hs Icon.o
+			ghc hashlauncher.hs icon.o
 
 Icon.o: Icon.rc hash.ico
-			windres -i Icon.rc Icon.o
+			windres -i icon.rc icon.o
 
 clean:
 			rm *.o *.hi
