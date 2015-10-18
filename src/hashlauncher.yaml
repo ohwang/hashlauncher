@@ -1,0 +1,19 @@
+# config for HashLauncher
+
+logging:
+  verbose: true
+  logpath: ./hashlauncher.log
+
+filetypes:
+  - ext: [.py]
+    prog: python
+
+  - ext: [.fsx, .fsscript]
+    prog: fsi
+
+  - ext: [.hs]
+    prog: runhaskekll
+
+executable_exts:
+  - .py
+  - .fsx

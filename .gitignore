@@ -1,5 +1,16 @@
 *.hi
 *.o
 *.exe
-
 *.pyc
+
+bin/
+obj/
+
+.paket/
+packages/
+build/
+.fake/
+
+.vs/
+*.suo
+
